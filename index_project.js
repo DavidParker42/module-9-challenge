@@ -46,18 +46,18 @@ inquirer
     );
   });
 
-  const generateReadme = ({githubName, email, projectName, description, license})
-    `${githubName}
+  // const generateReadme = ({githubName, email, projectName, description, license})
+  //   `${githubName}
     
-    ${email}
+  //   ${email}
     
-    ${projectName}
+  //   ${projectName}
     
-    ${description}
+  //   ${description}
 
-    ${license}
+  //   ${license}
     
-    ${dependencies}`
+  //   ${dependencies}`
 
   
 
