@@ -7,29 +7,35 @@ inquirer
   .prompt([
     {
         type: 'input', 
-        name: 'projectName',
-        message: 'What is your projects name?',
+        name: 'githubName',
+        message: 'What is your GitHub username?',
     },
     {
         type:"input",
+        name: "email",
+        message:"What is your email address?",
+    },
+    {
+        type: "input",
+        name: "projectName",
+        message:"What is your projects name?",
+    },
+    {
+        type: "input",
+        name: "description",
+        message:"Please write a short description of your project",
+    },
+    {
+        type: "checkbox",
         name: "license",
-        message:"What license did you use?",
+        message:"What kind of license should your project have?",
+        choices: ["MIT", "Apache 2.0", "GPL 3.0", "BSD 3", "None"],
     },
     {
-        type: "input",
-        name: "contribute",
-        message:"how cna others contribute to this project?",
-    },
-    {
-        type: "input",
-        name: "tests",
-        message:"how can others use the test",
-    },
-    {
-        type: "input",
-        name: "questions",
-        message:"",
-    },
+      type: "input",
+      name: "dependencies",
+      message:"What command should be run to install dependencies?",
+  },
   ])
 
   .then((answers) => {
@@ -39,7 +45,20 @@ inquirer
       err ? console.log(err) : console.log('Successfully created index.html!')
     );
   });
+
+  const generateReadme = ({githubName, email, projectName, description, license})
+    `${githubName}
     
+    ${email}
+    
+    ${projectName}
+    
+    ${description}
+
+    ${license}
+    
+    ${dependencies}`
+
   
 
 //   is generated with the title of my project and sections entitled Description, Installation, Usage, , Contributing, Tests, and Questions
