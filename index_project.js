@@ -38,13 +38,14 @@ inquirer
   },
   ])
 
-  .then((answers) => {
-    const htmlPageContent = generatemarkdowncontent(answers);
+.then((answers) => {
+  const htmlPageContent = generateHTML(answers);
 
-    fs.writeFile('index.html', htmlPageContent, (err) =>
-      err ? console.log(err) : console.log('Successfully created index.html!')
-    );
-  });
+  fs.writeFile('index.html', htmlPageContent, (err) =>
+    err ? console.log(err) : console.log('Successfully created index.html!')
+  );
+});
+
 
   // const generateReadme = ({githubName, email, projectName, description, license})
   //   `${githubName}
