@@ -1,7 +1,7 @@
 
   # Project Name
-  d
-  ![license](https://img.shields.io/badge/license-MIT-green)
+  module-9-challenge
+  ![license](https://img.shields.io/badge/license-GPL-3.0-green)
   ## Table of Contents
   1. [Description](#description)
   2. [Github](#github)
@@ -10,17 +10,17 @@
   4. [Dependencies](#dependencies)
   
   ## Description
-  d
+  allows me to write a short readme for a project
 
   ## Github
-  [myGithub](https://www.github.com/d)
+  [myGithub](https://www.github.com/parker42)
 
   ## Email
-  d
+  @gmail
 
   ## License
-  MIT
+  GPL-3.0
 
   ## Dependencies
-  d
+  any
   
