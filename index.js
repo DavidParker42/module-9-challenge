@@ -5,7 +5,7 @@ const fs = require('fs');
 const generatemarkdowncontent = ({ projectName, license, contribute, tests, questions }) =>{}
 
 // TODO: Create an array of questions for user input
-funtion promptGet{
+function promptGet(){
     const questions = [];
     inquirer
       .prompt([
