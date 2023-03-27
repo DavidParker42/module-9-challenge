@@ -2,12 +2,17 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-const generatemarkdowncontent = ({ projectName, license, contribute, tests, questions }) =>{}
+const generatemarkdowncontent = ({ projectName, license, contribute, tests, questions }) =>{
+    // call function promptGet, create function to create readme
+    function promtGet(){
+        
+    }
+}
 
 // TODO: Create an array of questions for user input
 function promptGet(){
     const questions = [];
-    inquirer
+    return inquirer
       .prompt([
         {
             type: 'input', 
@@ -41,18 +46,14 @@ function promptGet(){
           message:"What command should be run to install dependencies?",
       },
       ])
+      
 }
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-.then((response) => {
-    console.log(response);
+promptGet().then((response) => {
+    // console.log(response);
     fs.appendFile("response.txt", JSON.stringify(response, null, '\t'), (err) =>
       err ? console.error(err) : console.log("Saved")
     )
     });
-// TODO: Create a function to initialize app
-function init() {}
 
-// Function call to initialize app
-init();
